@@ -1,3 +1,5 @@
+The project was created as a coursework assignment for the course “Foundations of Artificial Intelligence”
+
 # 📍 Route Planning Using a Genetic Algorithm
 
 This project is designed to determine the optimal route between selected points in a city based on OpenStreetMap data, using:
