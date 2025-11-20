@@ -1,36 +1,37 @@
-# 📍 Wyznaczanie tras przy pomocy algorytmu genetycznego
+# 📍 Route Planning Using a Genetic Algorithm
 
-Projekt służy do wyznaczania optymalnej trasy między wybranymi punktami w mieście na podstawie danych z OpenStreetMap, wykorzystując:
+This project is designed to determine the optimal route between selected points in a city based on OpenStreetMap data, using:
 
-- **algorytm Dijkstry** jako punkt odniesienia umożliwiający porównanie otrzymanego wyniku do najlepszego możliwego,
-- **algorytm genetyczny** jako główny algorytm projektu, który szuka najkrótszej drogi łączącej wszystkie zaznaczone przez użytkownika punkty ma mapie
-  
-Wizualizacja i wybór punktów odbywa się interaktywnie na mapie za pomocą `ipyleaflet`.
+* **Dijkstra’s algorithm** as a reference point that allows comparison of the obtained result with the best possible path,
+* **a genetic algorithm** as the main algorithm of the project, which searches for the shortest route connecting all points selected by the user on the map.
 
-Dodatkowo użytkownik może modyfikować parametry algorytmu genetycznego i obserwować wpływ tych zmian na dokładność otrzymywanych tras.
+Visualization and point selection are done interactively on a map using `ipyleaflet`.
 
----
-
-## 💻 Najważniejsze technologie i biblioteki
-
-- **Python 3.10+**
-- `networkx` – grafy i ścieżki
-- `osmnx` – dane geograficzne z OpenStreetMap
-- `ipyleaflet` – interaktywna mapa do wyboru punktów
-- `ipywidgets` – dynamiczna interakcja z notebookiem
-- `matplotlib` – wykresy dokładności
-- `folium` – wizualizacje
-- `random`, `itertools` – logika permutacji i losowości
+Additionally, the user can modify genetic algorithm parameters and observe how these changes affect the accuracy of the resulting routes.
 
 ---
 
-## 🚀 Uruchomienie
-- Uruchom notatnik Jupyter lub Google Colab.
-- Zaimportuj bibliotekę i uruchom kod z wyborem punktów.
-- Zaznacz punkty na mapie (start, meta, punkty pośrednie).
-- Uruchom algorytm genetyczny.
-- Porównaj wyniki z trasą Dijkstry.
+## 💻 Key Technologies and Libraries
+
+* **Python 3.10+**
+* `networkx` – graphs and paths
+* `osmnx` – geographic data from OpenStreetMap
+* `ipyleaflet` – interactive map for point selection
+* `ipywidgets` – dynamic notebook interaction
+* `matplotlib` – accuracy plots
+* `folium` – visualizations
+* `random`, `itertools` – permutation and randomness logic
 
 ---
 
-Projekt obsługuje mapę Krakowa w promieniu 10km od Rynku Głównego, jednak można to szybko zmienić i zaznaczyć inny obszar bądź lokalizację.
+## 🚀 How to Run
+
+* Launch a Jupyter Notebook or Google Colab.
+* Import the library and run the code with the point selection interface.
+* Select points on the map (start, end, intermediate points).
+* Run the genetic algorithm.
+* Compare the results with the Dijkstra route.
+
+---
+
+The project supports a map of Kraków within a 10 km radius from the Main Square, but this can be easily changed to select another area or location.
